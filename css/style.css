@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400px;
+    padding: 1em;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation, 
+#current-operation {
+    min-height: 1.6em;
+    padding: .5em;
+    overflow-wrap: break-word;
+}
+
+#previous-operation {
+    color: #FFFFFF;  
+}
+
+#current-operation {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    height: 4.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#buttons-container .functions {
+    background-color: #a0a0a0;
+    font-weight: 700;
+}
+
+#buttons-container .functions:hover {
+    background-color: #EAEAEA;
+    border-color: #EAEAEA;
+}
+
+#buttons-container .operation {
+    background-color: #f69906;
+    font-weight: 700;
+    color: #FFFFFF
+}
+
+#buttons-container .operation:hover {
+    background-color: #FFCB8E;
+    border-color: #FFCB8E;
+}
+
+#buttons-container .number {
+    background-color: #323232;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#buttons-container .number:hover {
+    background-color: #a0a0a0;
+    border-color: #a0a0a0;
+}
+
+#buttons-container .zero {
+    grid-column: span 2;
+}
