@@ -6,7 +6,13 @@ const button = document.querySelectorAll("#buttons-container button")
 
 // lógica de aplicação da calculadora
 
-class Calculator {}
+class Calculator {
+    constructor(previosOperationText, currentOperationsText) {
+        this.previosOperationText = previosOperationText
+        this.currentOperationsText = currentOperationsText
+        this.currentOperation = ""
+    }
+}
 
 // eventos
 
