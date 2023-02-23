@@ -21,7 +21,11 @@ class Calculator {
         this.updateScreen()
     }
 
-    
+    // change values of calculator screen
+
+    updateScreen() {
+        this.currentOperationsText.innerText += this.currentOperation;
+    }
 }
 
 const calc = new Calculator(previosOperationText, currentOperationsText);
