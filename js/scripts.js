@@ -1,10 +1,10 @@
-// seleção dos elementos
+// element selection
 
 const previosOperationText = document.querySelector("#previous-operation")
 const currentOperationsText = document.querySelector("#current-operation")
 const button = document.querySelectorAll("#buttons-container button")
 
-// lógica de aplicação da calculadora
+// calculator logic application
 
 class Calculator {
     constructor(previosOperationText, currentOperationsText) {
@@ -13,7 +13,7 @@ class Calculator {
         this.currentOperation = ""
     }
 
-    // adiciona dígito na tela da calculadora
+    // add digit to calculator screen
 
     addDigit(digit) {
         
@@ -21,12 +21,7 @@ class Calculator {
         this.updateScreen()
     }
 
-// muda valores da tela da calculadora
-
-updateScreen() {
-    this.currentOperationsText.innerText += this.currentOperation;
-}
-
+    
 }
 
 const calc = new Calculator(previosOperationText, currentOperationsText);
