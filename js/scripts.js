@@ -12,7 +12,24 @@ class Calculator {
         this.currentOperationsText = currentOperationsText
         this.currentOperation = ""
     }
+
+    // adiciona dígito na tela da calculadora
+
+    addDigit(digit) {
+        
+        this.currentOperation = digit
+        this.updateScreen()
+    }
+
+// muda valores da tela da calculadora
+
+updateScreen() {
+    this.currentOperationsText.innerText += this.currentOperation;
 }
+
+}
+
+const calc = new Calculator(previosOperationText, currentOperationsText);
 
 // eventos
 
@@ -21,7 +38,7 @@ button.forEach((btn) => {
         const value = e.target.innerText;
 
         if(+value >= 0 || value === ".") {
-            console.log(value);
+            calc.addDigit(value);
         } else {
             console.log("Op: " + value);
         }
