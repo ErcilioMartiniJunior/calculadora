@@ -27,7 +27,17 @@ class Calculator {
         this.updateScreen()
     }
 
-    // change values of calculator screen
+    // process all calculator operations
+
+    processOperation(operation) {
+    
+        // get current and previous value
+        let operationValue
+        let previous = +this.previousOperationText.innerText
+        let current = +this.currentOperationsText.innerText
+    }
+
+    // change values of the calculator screen
 
     updateScreen() {
         this.currentOperationsText.innerText += this.currentOperation;
@@ -45,7 +55,7 @@ button.forEach((btn) => {
         if(+value >= 0 || value === ".") {
             calc.addDigit(value);
         } else {
-            console.log("Op: " + value);
+            calc.processOperation(value);
         }
     });
 });
