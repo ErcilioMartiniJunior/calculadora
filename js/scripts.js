@@ -17,6 +17,12 @@ class Calculator {
 
     addDigit(digit) {
         
+        //check if current operation already has a dot
+
+        if(digit === "." && this.currentOperationsText.innerText.includes(".")) {
+            return;
+        }
+
         this.currentOperation = digit
         this.updateScreen()
     }
