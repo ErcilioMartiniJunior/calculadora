@@ -1,25 +1,19 @@
-// element selection
-
-const previosOperationText = document.querySelector("#previous-operation")
-const currentOperationsText = document.querySelector("#current-operation")
-const button = document.querySelectorAll("#buttons-container button")
+const previousOperationText = document.querySelector("#previous-operation");
+const currentOperationText = document.querySelector("#current-operation");
+const buttons = document.querySelectorAll("#buttons-container button");
 
 // calculator logic application
-
 class Calculator {
-    constructor(previosOperationText, currentOperationsText) {
-        this.previosOperationText = previosOperationText
-        this.currentOperationsText = currentOperationsText
+    constructor(previousOperationText, currentOperationText) {
+        this.previousOperationText = previousOperationText
+        this.currentOperationText = currentOperationText
         this.currentOperation = ""
     }
 
     // add digit to calculator screen
-
     addDigit(digit) {
-        
         //check if current operation already has a dot
-
-        if(digit === "." && this.currentOperationsText.innerText.includes(".")) {
+        if(digit === "." && this.currentOperationText.innerText.includes(".")) {
             return;
         }
 
@@ -28,35 +22,51 @@ class Calculator {
     }
 
     // process all calculator operations
-
     processOperation(operation) {
-    
         // get current and previous value
-        let operationValue
-        let previous = +this.previousOperationText.innerText
-        let current = +this.currentOperationsText.innerText
+        let operationValue;
+        const previous = +this.previousOperationText.innerText;
+        const current = +this.currentOperationText.innerText;
 
         //Operation verification
         switch(operation) {
             case "+":
-                break
-            default:
+                operationValue = previous + current;
+                this.updateScreen(operationValue, operation, current, previous);
+                break;
+            default:    
                 return;
         }
     }
 
     // change values of the calculator screen
+    updateScreen(
+        operationValue = null, 
+        operation = null, 
+        current = null, 
+        previous = null
+     ) {
 
-    updateScreen() {
-        this.currentOperationsText.innerText += this.currentOperation;
+        if(operationValue === null) {
+            this.currentOperationText.innerText += this.currentOperation;
+        } else {
+            // check if value is zero, if it is jus add current value
+            if(previous === 0) {
+                operationValue = current
+            }
+
+            // add current value to previous
+            this.previousOperationText.innerText = `${operationValue} ${operation}`;
+            this.currentOperationText.innerText = "";
+        }
     }
 }
 
-const calc = new Calculator(previosOperationText, currentOperationsText);
+const calc = new Calculator(previousOperationText, currentOperationText);
 
 // eventos
 
-button.forEach((btn) => {
+buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const value = e.target.innerText;
 
