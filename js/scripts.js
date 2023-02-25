@@ -35,6 +35,14 @@ class Calculator {
         let operationValue
         let previous = +this.previousOperationText.innerText
         let current = +this.currentOperationsText.innerText
+
+        //Operation verification
+        switch(operation) {
+            case "+":
+                break
+            default:
+                return;
+        }
     }
 
     // change values of the calculator screen
