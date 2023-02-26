@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding: .5em;
 }
 
 #calc {
@@ -30,17 +30,22 @@ body {
 #previous-operation, 
 #current-operation {
     min-height: 1.6em;
+    max-height: 1.6em;
     padding: .5em;
     overflow-wrap: break-word;
 }
 
 #previous-operation {
-    color: #FFFFFF;  
+    color: #FFFFFF;
+    font-size: 4em;
+    font-weight: 300;
+    padding: 12px;  
 }
 
 #current-operation {
     font-size: 4em;
     font-weight: 300;
+    padding: 12px;
 }
 
 #buttons-container {
