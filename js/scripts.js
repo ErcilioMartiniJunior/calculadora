@@ -1,5 +1,4 @@
-// Elements Selection:
-
+// Seletor de elementos
 const previousOperationText = document.querySelector("#previous-operation");
 const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container button");
@@ -11,8 +10,7 @@ class Calculator {
     this.currentOperation = "";
   }
 
-  // Add digit to calculator screen
-
+  // Adiciona dígito a tela da calculadora
   addDigit(digit) {
     console.log(digit);
     // Check if number already has a dot
@@ -24,23 +22,23 @@ class Calculator {
     this.updateScreen();
   }
 
-  // Process all calculator operations
+  // Processa todas as operações da calculadora
   processOperation(operation) {
-    // Check if current value is empty
+    // Checa se o campo valor atual esta vazio
     if (this.currentOperationText.innerText === "" && operation !== "C") {
-      // Change operation
+      // Muda de operação
       if (this.previousOperationText.innerText !== "") {
         this.changeOperation(operation);
       }
       return;
     }
 
-    // Get current and previous values
+    // Seleciona os valores das operações prévia e atual
     let operationValue;
     let previous = +this.previousOperationText.innerText.split(" ")[0];
     let current = +this.currentOperationText.innerText;
 
-    // Lets you know which operation is being used
+    // Permite saber qual operação esta sendo usada
     switch (operation) {
       case "+":
         operationValue = previous + current;
@@ -75,7 +73,7 @@ class Calculator {
     }
   }
 
-  // Change values of calculator screen
+  // Altera os valores da tela da calculadora
   updateScreen(
     operationValue = null,
     operation = null,
@@ -83,20 +81,20 @@ class Calculator {
     previous = null
   ) {
     if (operationValue === null) {
-      // Append number to current value
+      // Anexa número ao valor atual
       this.currentOperationText.innerText += this.currentOperation; 
     } else {
-      // Check if value is zero, if is just add current value
+      // Checa se o valor é zero, Se for, adiciona o valor atual
       if (previous === 0) {
         operationValue = current;
       }
-      // Add current value to previous
+      // Acrescenta o valor atual ao prévio
       this.previousOperationText.innerText = `${operationValue} ${operation}`;
       this.currentOperationText.innerText = "";
     }
   }
 
-  // Change math operation
+  // Altera operação matemática
   changeOperation(operation) {
     const mathOperations = ["*", "-", "+", "/"];
 
@@ -108,24 +106,24 @@ class Calculator {
       this.previousOperationText.innerText.slice(0, -1) + operation;
   }
 
-  // Delete a digit
+  // Deleta um dígito
   processDelOperator() {
     this.currentOperationText.innerText =
       this.currentOperationText.innerText.slice(0, -1);
   }
 
-  // Erase current operation
+  // Apaga operação atual
   processClearCurrentOperator() {
     this.currentOperationText.innerText = "";
   }
 
-  // Erase all operations
+  // Apaga todas as operações
   processClearOperator() {
     this.currentOperationText.innerText = "";
     this.previousOperationText.innerText = "";
   }
 
-  // Process an operation
+  // Processa a operação
   processEqualOperator() {
     let operation = this.previousOperationText.innerText.split(" ")[1];
 
@@ -135,7 +133,7 @@ class Calculator {
 
 const calc = new Calculator(previousOperationText, currentOperationText);
 
-// Distinguish numbers from operations
+// Distingue números de operações
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
