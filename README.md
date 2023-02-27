@@ -6,7 +6,7 @@ Para a execução do projeto foram utilizadas as seguintes linguagens de program
 <h2>Layout</h2>
 <p>O layout do projeto foi inspirado na calculadora do iPhone.<br><br> Para o desenvolvimento do mesmo foi utilizada a linguagem de programação CSS.<br><br> Foram aplicadas as ferramentas Flexbox e Grid layout para disposição dos elementos na tela, bem como adicionado hover effect nos botões a fim de trazer uma maior experiência de interação com o usuário.</p>
 
-<img width="329" alt="Captura de Tela 2023-02-27 às 10 16 26" src="https://user-images.githubusercontent.com/116317572/221587150-951f1630-5f3b-4394-a087-7ec9f7eda61a.png">
+<img width="971" alt="Captura de Tela 2023-02-27 às 13 10 41" src="https://user-images.githubusercontent.com/116317572/221632361-0085ea65-9438-41d2-837c-dbdf7c71f4bf.png">
 
 <p>Paleta de cores:<br>
 - Background da página: #c4c4c4.<br>
