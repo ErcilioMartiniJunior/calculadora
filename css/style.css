@@ -95,6 +95,6 @@ body {
     border-color: #a0a0a0;
 }
 
-#buttons-container .number_zero {
+#number_zero {
     grid-column: span 2;
 }
