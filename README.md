@@ -1,5 +1,9 @@
 <h1> Calculadora JS </h1>
-
+<p float:"left">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 <p> O Objetivo do presente projeto é a criação de uma calculadora que fosse capaz de realizar operações matemáticas simples, tais como, adição, subtração, multiplicação e divisão.<br><br>
 Para a execução do projeto foram utilizadas as seguintes linguagens de programação: HTML, CSS e JavaScript.</p>
 
@@ -26,3 +30,8 @@ Afim de tornar a calculadora mais funcional, também foram implementadas as segu
 - Apagar operação atual (CE).<br>
 - Deletar tudo (C).<br><br>
 E, por fim, configurado o botão de (=) para processar os cálculos matemáticos.</p>
+
+<h2>Autor</h2>
+<p><strong>Ercilio martini Junior</strong><br>
+<strong>E-mail:</strong> erciliomartiniJunior@gmail.com<br>
+<strong>Linkedin:</strong> https://www.linkedin.com/in/erciliomartinijunior/</p>
