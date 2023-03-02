@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
-<p> O Objetivo do presente projeto é a criação de uma calculadora que fosse capaz de realizar operações matemáticas simples, tais como, adição, subtração, multiplicação e divisão.<br><br>
+<p> O Objetivo do presente projeto é a criação de uma calculadora que fosse capaz de realizar operações matemáticas elementares, tais como, adição, subtração, multiplicação e divisão.<br><br>
 Para a execução do projeto foram utilizadas as seguintes linguagens de programação: HTML, CSS e JavaScript.</p>
 
 <h2>Layout</h2>
