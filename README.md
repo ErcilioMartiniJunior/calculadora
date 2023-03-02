@@ -12,7 +12,7 @@ Para a execução do projeto foram utilizadas as seguintes linguagens de program
 
 <img width="971" alt="Captura de Tela 2023-02-27 às 13 16 08" src="https://user-images.githubusercontent.com/116317572/221633531-0471efed-73e0-4304-908a-178990449ed5.png">
 
-<p>Paleta de cores:<br>
+<p><strong>Paleta de cores:</strong><br>
 - Background da página: #c4c4c4.<br>
 - Calculadora: #000000.<br>
 - Cor da fonte visor: #FFFFFF.<br>
