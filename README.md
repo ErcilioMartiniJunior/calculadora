@@ -5,10 +5,10 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
 <p> O Objetivo do presente projeto é a criação de uma calculadora que fosse capaz de realizar operações matemáticas elementares, tais como, adição, subtração, multiplicação e divisão.<br><br>
-Para a execução do projeto foram utilizadas as seguintes linguagens de programação: HTML, CSS e JavaScript.</p>
+Para a execução do projeto foram utilizados HTML, CSS e JavaScript.</p>
 
 <h2>Layout</h2>
-<p>O layout do projeto foi inspirado na calculadora do iPhone.<br><br> Para o desenvolvimento do mesmo foi utilizada a linguagem de programação CSS.<br><br> Foram aplicadas as ferramentas Flexbox e Grid layout para disposição dos elementos na tela, bem como adicionado hover effect nos botões a fim de trazer uma maior experiência de interação com o usuário.</p>
+<p>O layout do projeto foi inspirado na calculadora do iPhone.<br><br> Para o desenvolvimento do mesmo foi utilizada a tecnologia CSS.<br><br> Foram aplicadas as ferramentas Flexbox e Grid layout para disposição dos elementos na tela, bem como adicionado hover effect nos botões a fim de trazer uma maior experiência de interação com o usuário.</p>
 
 <p><strong>Paleta de cores:</strong><br>
 - Background da página: #c4c4c4.<br>
