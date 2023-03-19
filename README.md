@@ -16,6 +16,9 @@
 <h2>Resultado final:</h2>
 <img width="971" alt="Captura de Tela 2023-02-27 às 13 16 08" src="https://user-images.githubusercontent.com/116317572/221633531-0471efed-73e0-4304-908a-178990449ed5.png">
 
+<h2>Deploy</h2>
+https://erciliomartinijunior.github.io/calculadora/
+
 <h2>Autor</h2>
 <h3>Ercilio martini Junior</h3>
 <p><strong>Desenvolvedor Front-end</strong><br>
